@@ -5,10 +5,9 @@ You will need **NodeJS** installed on your computer. You can download it here:
 https://nodejs.org/en/download/
 
 ###### Download or clone this repository
-Download ZIP file and extract it in folder you wish.
+Click the green button upper right of this page and download ZIP file. Extract it in folder you wish.
 
-Or clone the repository in desired folder:
-`git clone https://github.com/hohnzy/public-blog.git`
+Or clone the repository in desired folder: `git clone https://github.com/hohnzy/public-blog.git`
 
 ###### Setup the app
 
