@@ -2,10 +2,11 @@
 ## Instalation
 
 You will need **NodeJS** installed on your computer. You can download it here:
-(https://nodejs.org/en/download/)
+https://nodejs.org/en/download/
 
 ###### Download or clone this repository
 Download ZIP file and extract it in folder you wish.
+
 Or clone the repository in desired folder:
 `git clone https://github.com/hohnzy/public-blog.git`
 
