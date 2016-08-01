@@ -7,7 +7,7 @@ https://nodejs.org/en/download/
 ###### Download or clone this repository
 Click the green button upper right of this page and download ZIP file. Extract it in folder you wish.
 
-Or clone the repository in desired folder: `git clone https://github.com/hohnzy/public-blog.git`
+Or clone the repository in desired folder by this command in terminal: `git clone https://github.com/hohnzy/public-blog.git`
 
 ###### Setup the app
 
@@ -17,6 +17,6 @@ Or clone the repository in desired folder: `git clone https://github.com/hohnzy/
 
 ###### Running application
 * Open app folder in terminal and type: `node app.js`
-* If you see *SERVER IS RUNNING!*, then everything is alright
+* If you see *"SERVER IS RUNNING!"*, then everything is alright
 * Open your browser and type url: `localhost:3000`
 * Use as you wish :)
