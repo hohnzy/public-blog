@@ -1,0 +1,40 @@
+<!-- Include header -->
+<% include partials/header %>
+
+<!-- After top navigation menu -->
+<div class="ui main text container">
+    <div class="ui huge header">Public Blog</div>
+    <% if (posts == 0) { %>
+        <p>No post yet. Create a new one!</p>
+        <a class="ui orange basic button" href="/posts/new">Create New Post</a>
+    <% } else { %>
+    <div class="ui top attached segment">
+        <div class="ui divided items">  
+            <% posts.forEach(function(post){ %>
+                <div class="item">
+                    <div class="content">
+                        <a class="header" href="/posts/<%= post._id %>"><%= post.title %></a>
+                        <div class="meta">
+                            <span class="time"><%= post.time.toLocaleString(0, {hour: "numeric", minute: "numeric", day: "numeric", month: "numeric", year: "numeric"}) %></span>
+                        </div>
+                        <div class="description">
+                            <p><%- post.text.substring(0, 200) %>...</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui floated basic violet button" href="/posts/<%= post._id %>">
+                                Read More
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+    <% } %>
+</div>
+
+
+
+<!-- Include footer -->
+<% include partials/footer %>

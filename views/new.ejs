@@ -1,0 +1,23 @@
+<!-- Include header -->
+<% include partials/header %>
+
+<!-- After top navigation menu -->
+<div class="ui main text container segment">
+    <div class="ui huge header">New Post</div>
+    <form class="ui form" action="/posts" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title of your post">
+        </div>
+        <div class="field">
+            <label>Post Content</label>
+            <textarea type="text" name="text" placeholder="Content of your post"></textarea>
+        </div>
+        <input class="ui violet big basic button" type="submit">
+    </form>
+</div>
+
+
+
+<!-- Include footer -->
+<% include partials/footer %>

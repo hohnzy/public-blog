@@ -1,0 +1,23 @@
+<!-- Include header -->
+<% include /partials/header %>
+
+<!-- After top navigation menu -->
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= post.title %></div>
+    <div class="ui top attached">
+        <div class="item">
+            <div class="content">
+                <span class="time"><%= post.time.toLocaleString(0, {hour: "numeric", minute: "numeric", day: "numeric", month: "numeric", year: "numeric"}) %></span>
+            
+                <p class="post"><%- post.text %></p>
+            </div>
+            <a class="ui orange basic button" href="/posts/<%= post._id %>/edit">Edit</a>
+            <form id="delete" action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+                <button class="ui red basic button">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Include footer -->
+<% include /partials/footer %>
