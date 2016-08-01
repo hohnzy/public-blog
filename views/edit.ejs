@@ -13,6 +13,10 @@
             <label>Post Content</label>
             <textarea name="text"><%= post.text %></textarea>
         </div>
+        <div class="field">
+            <label>Author</label>
+            <input type="text" name="author" value="<%= post.author %>">
+        </div>
         <input class="ui violet big basic button" type="submit">
     </form>
 </div>
