@@ -15,6 +15,11 @@
                     <div class="content">
                         <a class="header" href="/posts/<%= post._id %>"><%= post.title %></a>
                         <div class="meta">
+                            <% if (post.author === undefined) { %>
+                                <span class="author">Anonymous user</span>
+                            <% } else { %>
+                                <span class="author"><%= post.author %></span>
+                            <% } %>
                             <span class="time"><%= post.time.toLocaleString(0, {hour: "numeric", minute: "numeric", day: "numeric", month: "numeric", year: "numeric"}) %></span>
                         </div>
                         <div class="description">

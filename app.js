@@ -12,6 +12,7 @@ var Schema = mongoose.Schema;
 var postSchema = new Schema({
     title: String,
     text: String,
+    author: String,
     time: {type: Date, default: Date.now}
 });
 var Post = mongoose.model("Post", postSchema);
@@ -52,7 +53,8 @@ app.get("/posts/new", function(req, res) {
 app.post("/posts", function(req, res) {
     var title = req.body.title;
     var text = req.body.text;
-    var newPost = {title: title, text: text};
+    var author = req.body.author;
+    var newPost = {title: title, text: text, author: author};
     Post.create(newPost, function(err, createdPost){
         if(err){
             console.log(err);

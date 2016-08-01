@@ -18,3 +18,9 @@
 .post {
     margin-top: 15px;
 }
+
+.author {
+    font-size: 0.8em;
+    color: #555;
+    font-style: italic;
+}
