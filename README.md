@@ -10,6 +10,8 @@ Download ZIP file and extract it in folder you wish.
 Or clone the repository in desired folder:
 `git clone https://github.com/hohnzy/public-blog.git`
 
+###### Setup the app
+
 * Open terminal, bash, console or command line (or how you call it)
 * Go to folder with unpacked or cloned repository
 * Type: `npm install` to install all dependencies
